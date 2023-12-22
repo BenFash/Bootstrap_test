@@ -2,12 +2,26 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container {}
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    color: #544600;
+    background-color: #eec802;
+    border-color: #eec802;
+    padding: 5px 15px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
 
 .callout-container {
     height: 100vh;
 
-    background: url(../callout-background.jpg) no-repeat bottom right fixed;
+    background: url('/assets/imgs/callout-background.jpg') no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -29,27 +43,36 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.quotes-container {}
+/* Navbar */
 
-.features-container {}
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-left: 0;
+    padding-right: 0;
+}
 
-/*block dividers*/
-
-.block-divider {
-    width: 75px;
-    height: 5px;
+.navbar {
+    margin-bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .25);
     border: 0;
 }
 
-.block-divider--orange {
-    background-color: tomato;
+.navbar .navbar-toggler {
+    border: 0;
 }
 
-.block-divider--short {
-    width: 35px;
-
-
+.navbar .navbar-brand {
+    font-weight: bold;
 }
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+
 
 /* Jumbotron */
 
@@ -57,32 +80,42 @@ body {
     background-color: transparent;
 }
 
-.jumbotron-header {
+.jumbotron h1 {
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
+    color: white;
 }
 
 .jumbotron .lead {
-    margin: 25px;
-    font-weight: 300;
-    color: #e9ecef;
-}
-
-.jumbotron .mark,
-mark {
-    padding: 0;
-    background-color: #fcf8e3;
+    color: #a7a7a7;
+    margin: 25px 0;
 }
 
 .jumbotron small {
-    font-size: 100%;
+    font-size: 60%;
     font-style: italic;
-    color: #b4abab;
+    color: #d0d0d0;
+}
+
+/* Block dividers */
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #444;
+}
+
+.block-divider--orange {
+    background-color: #f05f40;
+}
+
+.block-divider--short {
+    width: 35px;
 }
 
 /* Buttons */
-
 
 .btn--cta {
     font-weight: bold;
@@ -93,13 +126,14 @@ mark {
 .btn--red {
     color: white;
     background-color: #f05f40;
-    border-color: #f05f40
+    border-color: #f05f40;
 }
 
 .btn--red:hover,
 .btn--red:active,
 .btn--red:focus,
-.btn--red.btn--red:active:focus {
-    background-color: #56261c;
-    border-color: #56261c;
+.btn--red:active:focus {
+    background-color: #df4929;
+    border-color: #df4929;
+    color: white;
 }
