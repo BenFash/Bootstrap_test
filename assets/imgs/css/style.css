@@ -78,15 +78,16 @@ mark {
 .jumbotron small {
     font-size: 100%;
     font-style: italic;
-    color: black;
+    color: #b4abab;
 }
 
 /* Buttons */
 
+
 .btn--cta {
     font-weight: bold;
     border-radius: 23px;
-    width: 160px
+    width: 160px;
 }
 
 .btn--red {
@@ -95,10 +96,10 @@ mark {
     border-color: #f05f40
 }
 
-.btn--red:hoover,
+.btn--red:hover,
 .btn--red:active,
 .btn--red:focus,
 .btn--red.btn--red:active:focus {
-    background-color: #f05f40;
-    border-color: #f05f40;
+    background-color: #56261c;
+    border-color: #56261c;
 }
